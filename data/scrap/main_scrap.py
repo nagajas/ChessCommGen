@@ -64,7 +64,7 @@ with open(new_output_path, 'w') as f:
             newgames += 1
             f.write('\n\n')
         
-        f.write(line.strip())
+        f.write(line.strip()+'<move>')
 
 print(f"Total games found: {newgames}")
 print(f"Data saved in: {new_output_path}")
