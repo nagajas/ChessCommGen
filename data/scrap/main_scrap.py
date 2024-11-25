@@ -62,7 +62,7 @@ with open(new_output_path, 'w') as f:
         moves_list, _ = line.split("<sep>")
         if moves_list.startswith("1.") and not moves_list.startswith("1..."):
             newgames += 1
-            f.write('\n\n')
+            f.write('\n')
         
         f.write(line.strip()+'<move>')
 
